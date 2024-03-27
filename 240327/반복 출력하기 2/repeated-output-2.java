@@ -1,7 +1,11 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         // 여기에 코드를 작성해주세요.
-        printHello(4);                     //printHello 메서드 호출
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        printHello(x);                     //printHello 메서드 호출
         
     }
     public static void printHello(int n) { // 1부터 n번째 줄까지 별을 출력하는 함수
