@@ -5,6 +5,7 @@ public class Main {
         // 여기에 코드를 작성해주세요.
         Scanner sc = new Scanner(System.in);
         int n, q;
+        int question;
         n = sc.nextInt(); // 원소의 개수 n
         q = sc.nextInt(); // 질의 개수 q
 
@@ -20,7 +21,7 @@ public class Main {
 //        }
 //      q 개의 질의 받기
         for (int i = 0; i < q; i ++) {
-            int question = sc.nextInt();
+            question = sc.nextInt();
             switch (question) {
                 case 1 : // a 번째 원소 출력
                     int a = sc.nextInt();
@@ -46,10 +47,10 @@ public class Main {
                 case 3 : // a부터 b원소까지 순서대로 공배을 사이에 두고 출력
                     int s = sc.nextInt(); // 시작
                     int b = sc.nextInt(); // 끝
-
                     for (int k = (s-1); k < b; k++ ) { // 시작부터 끝번호 출력
                         System.out.print(arr[k] + " ");
                     }
+                    System.out.println();
                     break;
             }
         }
